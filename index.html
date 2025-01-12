@@ -83,18 +83,24 @@
 		hr {
             border: 0;
             height: 20px;
-            background-color: #2c3e50; /* Cambia el color aquí */
+            background-color: #2f3d46; /* Cambia el color aquí */
             margin:0;
         }
 		
 		.titulo-recuadro {
-            background-color: #2c3e50; /* Color del fondo del recuadro */
-            color: #ffffff; /* Color del texto */
-            padding: 10px 20px; /* Espaciado interno */
-            border-radius: 8px; /* Bordes redondeados */
+            background-color: #2f3d46; /* Color del fondo del recuadro */
+            color: #a8d4b9; /* Color del texto */
+            padding: 30px 30px; /* Espaciado interno */
+            border-radius: 10px; /* Bordes redondeados */
             text-align: center; /* Centrar el texto */
-            margin: 20px 0; /* Espaciado externo */
-            font-size: 1.5em; /* Tamaño de la fuente */
+			font-family: 'Arial', sans-serif; /* Asegura una fuente limpia */
+            font-weight: 300; /* Estilo ligero */
+            letter-spacing: 2px; /* Espaciado entre letras */
+            text-transform: uppercase; /* Texto en mayúsculas */
+            margin: 20px auto; /* Espaciado externo */
+            max-width: 90%; /* Ancho máximo adaptable */
+            box-sizing: border-box;
+			font-size: 1.5em
         }
 
         body {
@@ -107,7 +113,21 @@
             margin: 20px auto;
             max-width: 100%; /* Asegura que no sobrepase el ancho del contenedor */
             text-align: center;
+			color: #2f3d46;
         }
+		.boton-ver-mas {
+		display: inline-block;
+		background-color: #2f3d46;
+		color: #a8d4b9;
+		padding: 10px 20px;
+		text-decoration: none;
+		border-radius: 5px;
+		font-size: 1em;
+		margin-top: 10px;
+		}
+		.boton-ver-mas:hover {
+			background-color: #1a252f;
+		}
         iframe {
             border: 0;
             width: 100%; /* Ocupa todo el ancho disponible */
@@ -119,16 +139,37 @@
                 height: 450px; /* Más alto en pantallas más grandes */
             }
         }
+
+		/* Opcional: Ocultar el icono del traductor cuando no es necesario */
+        #google_translate_element select {
+            background-color: #f7f5f2;
+            border: none;
+            font-size: 16px;
+			padding: 5px;
+        }
+
+
     </style>
 
-
-
-
-
-
+	<!-- Script para Google Translate -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'es', 
+                includedLanguages: 'en,de,fr',  /* Idiomas disponibles: inglés, alemán, francés */
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 </head>
+
 <body>
+	<!-- Contenedor del traductor -->
+    <div id="google_translate_element"></div>
+
+
 	<div id="fh5co-wrapper">
 	<div id="fh5co-page">
 	<div id="fh5co-header">
@@ -164,7 +205,7 @@
 		   					<div class="desc">
 		   						<p><span>La Paquisima</span></p>
 		   						<h2>Tu Chalet Vacacional </h2>
-								
+								<a href="blog.html" class="boton-ver-mas">Ver Fotos</a>
 		   					</div>
 		   				</div>
 		   			</div>
@@ -178,7 +219,7 @@
 		   					<div class="desc">
 		   						<p><span>Casa de Campo </span></p>
 		   						<h2>Experiencias Inolvidables</h2>
-								
+								<a href="blog.html" class="boton-ver-mas">Ver Fotos</a>
 		   					</div>
 		   				</div>
 		   			</div>
@@ -192,7 +233,7 @@
 		   					<div class="desc">
 		   						<p><span>Casa Paqui</span></p>
 		   						<h2>Disfruta Tus Vacaciones</h2>
-			   					
+								<a href="blog.html" class="boton-ver-mas">Ver Fotos</a>	
 		   					</div>
 		   				</div>
 		   			</div>
@@ -203,57 +244,56 @@
 	  	</div>
 	</aside>
 	
-	<p>.</p>.<p>.</p>.<p>.</p>
-
-	<div id="hotel-facilities">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="section-title text-center">
-						<h2>Descripción</h2>
-					</div>
-				</div>
-			</div>
-	
-	<h3>Información del Alojamiento</h3>
-	
-	<p align="justify">
-		Bienvenido a Casa Paqui, un chalet con piscina privada y barbacoa de piedra.
-		Cómodo y acogedor, ubicado en una zona tranquila de Roche, a pocos minutos de Conil, y muy cerca de la playa.
-		El espacio
-		Un lugar ideal para disfrutar de ti y de los tuyos, donde la tranquilidad es la protagonista.
+	<p>.</p>.<p>.</p>.<p>.<p>.</p>.<p>
 		
-		El interior de la casa cuenta con tres dormitorios, sala de estar, cocina americana totalmente equipada, un baño privado y con capacidad para hasta 6 personas.
-		
-		La zona exterior es el sitio donde pasarás la mayoría del tiempo.
-		La parcela tiene 1000 m², está completamente vallada para que disfrutes de tu privacidad al máximo.
-		La mayor parte es un enorme jardín donde podrás disfrutar de barbacoas al aire libre al lado de una gran piscina y descansar en múltiples tumbonas mientras comes en las mesitas del jardín.
-		Hay una bonita zona de comedor en el porche de la casa con vistas a la piscina y al jardín muy bien cuidado con sitio para 3 coches dentro de la propiedad.
-	</p>
-	
-	<h3>Sobre el Espacio</h3>
-									
-	<p align="justify">
-		La casa de vacaciones Casa Paqui se encuentra cerca de un pinar en el distrito de Roche Viejo. 
-		Terreno cerrado de 1000 m² para mantener la privacidad de la estancia, parte de hormigón y parte de gran jardín. 
-		Conil de la Frontera con una gran playa de arena, tiendas, restaurantes y vistas excepcionales a 5 min en coche; y a menos, de la playa más cercana: "Cala del Puntalejos".
-		La casa cuenta con una gran piscina (aprox. 8 x 4 m, abierta todo el año) con escalera romana, un porche cubierto y amueblado con vistas a la piscina. El jardin cuneta con ducha exterior, 6 tumbonas y sombrilla. 
-		La barbacoa de ladrillo en el jardín junto a la piscina es la estrella de las reuniones y fiestas en grupo. 
-		Hay estacionamiento privado para hasta 3 autos dentro de la propiedad.
-		Mosquiteras en todos los dormitorios y contamos con una calefaccion local a gas: "catalitica".
-	</p>
+		<!-- Contenedor del traductor -->
+    	<div id="google_translate_element"></div>
 
-	<hr>				
-	<div id="hotel-facilities">
+		<div class="titulo-recuadro">
+			descripción
+		</div>
+
+	<div id="">
 		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="section-title text-center">
-						<h2> Descubre el Encanto de Roche Viejo: Tu Refugio Perfecto en la Costa Gaditana</h2>
-					</div>
-				</div>
-			</div>
-			<p>
+
+			<h3>Información del Alojamiento</h3>
+			
+			<p align="justify">
+				Bienvenido a Casa Paqui, un chalet con piscina privada y barbacoa de piedra.
+				Cómodo y acogedor, ubicado en una zona tranquila de Roche, a pocos minutos de Conil, y muy cerca de la playa.
+				El espacio
+				Un lugar ideal para disfrutar de ti y de los tuyos, donde la tranquilidad es la protagonista.
+				
+				El interior de la casa cuenta con tres dormitorios, sala de estar, cocina americana totalmente equipada, un baño privado y con capacidad para hasta 6 personas.
+				
+				La zona exterior es el sitio donde pasarás la mayoría del tiempo.
+				La parcela tiene 1000 m², está completamente vallada para que disfrutes de tu privacidad al máximo.
+				La mayor parte es un enorme jardín donde podrás disfrutar de barbacoas al aire libre al lado de una gran piscina y descansar en múltiples tumbonas mientras comes en las mesitas del jardín.
+				Hay una bonita zona de comedor en el porche de la casa con vistas a la piscina y al jardín muy bien cuidado con sitio para 3 coches dentro de la propiedad.
+			</p>
+	
+			<h3>Sobre el Espacio</h3>
+											
+			<p align="justify">
+				La casa de vacaciones Casa Paqui se encuentra cerca de un pinar en el distrito de Roche Viejo. 
+				Terreno cerrado de 1000 m² para mantener la privacidad de la estancia, parte de hormigón y parte de gran jardín. 
+				Conil de la Frontera con una gran playa de arena, tiendas, restaurantes y vistas excepcionales a 5 min en coche; y a menos, de la playa más cercana: "Cala del Puntalejos".
+				La casa cuenta con una gran piscina (aprox. 8 x 4 m, abierta todo el año) con escalera romana, un porche cubierto y amueblado con vistas a la piscina. El jardin cuneta con ducha exterior, 6 tumbonas y sombrilla. 
+				La barbacoa de ladrillo en el jardín junto a la piscina es la estrella de las reuniones y fiestas en grupo. 
+				Hay estacionamiento privado para hasta 3 autos dentro de la propiedad.
+				Mosquiteras en todos los dormitorios y contamos con una calefaccion local a gas: "catalitica".
+			</p>
+		</div>
+	</div>
+	</p>.</p>
+
+		<div class="titulo-recuadro">
+			Descubre el Encanto de Roche Viejo: Tu Refugio Perfecto en la Costa Gaditana
+		</div>
+
+	<div id="">
+		<div class="container">
+			<p align="justify">
 				Ubicado en el pintoresco paraje de Roche Viejo, cerca de Conil de la Frontera, nuestro alojamiento te invita a disfrutar de la esencia auténtica de la costa gaditana. Este es el lugar ideal para relajarte y explorar todo lo que la región tiene para ofrecer.
 			</p>
 			<h3><strong>Atracciones Turísticas</strong></h3>
@@ -271,11 +311,13 @@
 				<li><strong>Rutas enológicas y gastronómicas:</strong> Descubre bodegas locales en la Ruta del Vino de la Tierra de Cádiz y prueba especialidades como el atún rojo y el queso payoyo.</li>
 			</ul>
 			<h3><strong>Tu Refugio Ideal</strong></h3>
-			<p>
+			<p align="justify">
 				Nuestro alojamiento combina la tranquilidad del entorno rural con la comodidad moderna, ofreciendo un espacio acogedor para desconectar y recargar energías. Perfecto para familias, parejas o grupos de amigos que buscan una escapada única.
 			</p>
-			<p>¡Ven y vive la magia de Roche Viejo y la Costa de la Luz! 🌊☀️</p>
-	
+			<p align="justify"> ¡Ven y vive la magia de Roche Viejo y la Costa de la Luz! 🌊☀️</p>
+		</div>
+	</div>
+			
 	<div id="testimonial">
 		<div class="container">
 			<div class="row">
@@ -292,14 +334,9 @@
 					</div>
 				</div>
 			</div>
-			
-
-
 		</div>
 	</div>
 
-
-	
 	<footer id="footer" class="fh5co-bg-color">
 		<div class="container">
 			<div class="row">
